@@ -19,6 +19,7 @@ A React-based task manager application integrated with Firebase for real-time da
 
 
 3.  Create a .env file in the root directory and add your Firebase configuration:
+     ```bash
     REACT_APP_FIREBASE_API_KEY=<your-api-key>
     REACT_APP_FIREBASE_AUTH_DOMAIN=<your-auth-domain>
     REACT_APP_FIREBASE_PROJECT_ID=<your-project-id>
@@ -26,9 +27,9 @@ A React-based task manager application integrated with Firebase for real-time da
     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<your-messaging-sender-id>
     REACT_APP_FIREBASE_APP_ID=<your-app-id>
 
-4.  Start the application:
+5.  Start the application:
     ```bash
     npm start
     
-5.  Access the application at http://localhost:3000.
+6.  Access the application at http://localhost:3000.
 

@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #717fab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+}
+
+/* Main container styling */
+#root {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #94c1cb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+form input,
+form textarea,
+form select,
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+form button {
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+li h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+li p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+li select {
+  max-width: 150px;
+}
+
+li button {
+  align-self: flex-start;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #cc0000;
+}
+
+/* Filter dropdown styling */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #root {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  form textarea,
+  form select,
+  form button {
+    font-size: 0.9rem;
+  }
+
+  li h3 {
+    font-size: 1rem;
+  }
+
+  li p {
+    font-size: 0.8rem;
+  }
+
+  li button {
+    font-size: 0.8rem;
   }
 }
